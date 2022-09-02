@@ -2490,7 +2490,8 @@ footer {
 
   .coupon button,
   #subtotal button,
-  .form-details button {
+  .form-details button,
+  #confirmed button {
     background: var(--salmon-pink);
     padding: 8px 15px;
     color: var(--white);
@@ -2507,7 +2508,8 @@ footer {
 
   .coupon button:hover,
   #subtotal button:hover,
-  .form-details button:hover {
+  .form-details button:hover,
+  #confirmed button:hover {
     background: var(--eerie-black);
     color: var(--white);
   }
@@ -2666,41 +2668,27 @@ footer {
     color: black;
   }
 
-  /* contact
+  /* seller */
 
-  #contact-details {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+  .people img{
+    display: none;
   }
 
-  #contact-details .details {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+  /* confirmed */
 
-  #contact-details .map {
-    width: 100%;
-  }
-
-  #contact-details .details li {
+  #confirmed {
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  .form-details {
-    margin: 10px;
-    padding: 30px 10px;
-    flex-wrap: wrap;
+  #confirmed h1{
+    text-align: center;
+    margin: 50px 0;
   }
-
-  .form-details form {
-    width: 100%;
-    margin-bottom: 30px;
-  } */
 }
 
 /**
@@ -3070,12 +3058,28 @@ footer {
 
   /* contact */
 
-  #contact-details{
+  #contact-details {
     flex-direction: row;
   }
 
-  .form-details{
+  .form-details {
     flex-direction: row;
+  }
+
+  /* seller */
+
+  #display-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .people img{
+    display: block;
+    width: 90%;
+    margin-top: 100px;
   }
 }
 
@@ -3809,6 +3813,13 @@ footer {
     font-size: 16px;
     font-weight: 600;
     color: black;
+  }
+
+  /* seller */
+
+  .people img{
+    width: 100%;
+    margin-top: 0;
   }
 }
 
